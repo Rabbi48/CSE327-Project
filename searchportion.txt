@@ -1,0 +1,63 @@
+.search {
+         width: 500px;
+         display: flex;
+      }
+
+      .sortbutton {
+         background-color: #0D1B2A;
+         padding: 5px;
+         font-size: 17px;
+         background-color: #0D1B2A;
+         border: 2px solid #0D1B2A;
+         border-radius: 10px;
+         color: white;
+      }
+
+      .searchbar {
+         width: 80%;
+         padding: 10px;
+         border-top-left-radius: 10px;
+         border-bottom-left-radius: 10px;
+         border: 1px solid #d1d1d1;
+         text-transform: capitalize;
+         background: none;
+         color: #a9a9a9;
+         outline: none;
+      }
+
+      .searchby {
+         padding: 5px;
+         font-size: 17px;
+         margin-right: 30px;
+         border-radius: 10px;
+      }
+
+      .go {
+         width: 20%;
+         height: 40px;
+         padding: 10px 20px;
+         border: none;
+         outline: none;
+         cursor: pointer;
+         background: #534c4c;
+         color: #fff;
+         text-transform: capitalize;
+         font-size: 15px;
+         border-top-right-radius: 10px;
+         border-bottom-right-radius: 10px;
+      }
+
+
+ <div class="topbar">
+      <form action="products" method="post">
+         <div class="search">
+            <input class="searchbar" type="text" placeholder="Search.." name="query">
+            <input type="submit" class="go" value="Search" />
+            <select class="searchby" name="searchby">
+               <option value="product_name" name="Product">Product</option>
+               <option value="generic_name" name="Generic">Generic</option>
+               <option value="company_name" name="Company">Company</option>
+            </select>
+         </div>
+      </form>
+   </div>
